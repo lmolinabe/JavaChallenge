@@ -36,7 +36,7 @@ public class UrlShortenerController {
 		
 		url = urlShortenerService.RetrieveUrlFromAlias(alias);
 		
-		if(url.contains("http")) {
+		if(url.contains("http://") || url.contains("https://")) {
 			externalUrl = String.format("%s%s", "redirect:", url);
 		}
 		else {
