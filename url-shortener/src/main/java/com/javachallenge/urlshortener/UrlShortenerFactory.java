@@ -1,5 +1,8 @@
 package com.javachallenge.urlshortener;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class UrlShortenerFactory {
 	public IUrlShortener getUrlShortener(String url) {
 		
